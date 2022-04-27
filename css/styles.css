@@ -10,6 +10,8 @@
   --logo-footer-color: #ffffff;
   --team-card-bg-color: #ffffff;
   --team-soc-icon-color: #afb1b8;
+  --transition-duration: 250ms;
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Утилиты */
@@ -109,24 +111,29 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-color-title);
+
+  position: relative;
+  transition: color var(--transition-duration) var(--transition-timing);
 }
 
 .header-link.current {
   color: var(--accent-color);
+  position: relative;
 }
 
-/* .header-link.current::after {
-  display: inline-block;
+.header-link.current::after {
   content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
+  display: block;
   width: 100%;
   height: 4px;
 
-  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
   background-color: var(--accent-color);
-} */
+  border-radius: 2px;
+}
 
 .header-link:hover,
 .header-link:focus {
@@ -154,6 +161,8 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  transition: color var(--transition-duration) var(--transition-timing);
 }
 
 .contact-icon {
@@ -254,6 +263,10 @@ img {
   letter-spacing: 0.06em;
   color: var(--hero-title-color);
   background-color: var(--accent-color);
+
+  transition: backgroung-color var(--transition-duration)
+      var(--transition-timing),
+    color var(--transition-duration) var(--transition-timing);
 }
 
 .hero-btn:hover {
@@ -428,6 +441,10 @@ img {
   border-radius: 50%;
   align-items: center;
   fill: var(--team-soc-icon-color);
+
+  transition: background-color var(--transition-duration)
+      var(--transition-timing),
+    fill var(--transition-duration) var(--transition-timing);
 }
 
 .team-soc-link:hover,
@@ -465,6 +482,9 @@ img {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: var(--team-soc-icon-color);
+
+  transition: fill var(--transition-duration) var(--transition-timing),
+    border var(--transition-duration) var(--transition-timing);
 }
 
 .clients-link:hover,
@@ -505,6 +525,8 @@ img {
   line-height: 1.71px;
   letter-spacing: 0.03em;
   color: var(--hero-title-color);
+
+  transition: color var(--transition-duration) var(--transition-timing);
 }
 
 .address-item:not(:last-child) {
@@ -522,6 +544,8 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+
+  transition: color var(--transition-duration) var(--transition-timing);
 }
 
 .address-contact-link:hover,
@@ -543,11 +567,9 @@ img {
   display: flex;
   justify-content: center;
 }
-
 .soc-item:not(:last-child) {
   margin-right: 10px;
 }
-
 .soc-link {
   display: flex;
   justify-content: center;
@@ -558,8 +580,10 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
   align-items: center;
   fill: var(--hero-title-color);
-}
 
+  transition: background-color var(--transition-duration)
+    var(--transition-timing);
+}
 .soc-link:hover,
 .soc-link:focus {
   background-color: var(--accent-color);
@@ -615,6 +639,10 @@ img {
   letter-spacing: 0.03em;
   color: #212121;
   background-color: #f5f4f2;
+
+  transition: color var(--transition-duration) var(--transition-timing),
+    background-color var(--transition-duration) var(--transition-timing),
+    box-shadow var(--transition-duration) var(--transition-timing);
 }
 
 .portfolio-btn:hover,
@@ -651,6 +679,8 @@ img {
 
 .portfolio-link {
   display: flow-root;
+
+  transition: box-shadow var(--transition-duration) var(--transition-timing);
 }
 
 .portfolio-link:hover,
