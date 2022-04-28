@@ -686,8 +686,7 @@ img {
   height: 100%;
 
   transform: translateY(100%);
-  transition: transform 250ms var(--transition-duration)
-    var(--transition-timing);
+  transition: transform var(--transition-duration) var(--transition-timing);
 }
 
 /* Modal window */
@@ -699,9 +698,8 @@ img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 
-  transition: opacity 250ms var(--transition-duration)
-      var(--transition-duration),
-    visibility 250ms var(--transition-duration) var(--transition-timing);
+  transition: opacity var(--transition-duration) var(--transition-duration),
+    visibility var(--transition-duration) var(--transition-timing);
 }
 
 .backdrop.is-hidden {
@@ -710,11 +708,16 @@ img {
   visibility: hidden;
 }
 
+.backdrop.is-hidden .modal {
+  transform: scale(0.2) rotate(-100deg);
+}
+
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transition: transform var(--transition-duration) var(--transition-timing);
+  transform: translate(-50%, -50%) scale(1) rotate(0);
 
   min-height: 581px;
   min-width: 528px;
