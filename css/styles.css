@@ -129,7 +129,7 @@ img {
 
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
 
   background-color: var(--accent-color);
   border-radius: 2px;
@@ -320,14 +320,17 @@ img {
 
 .about-overlay-text {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   bottom: 0;
-  padding: 27px 82px;
+  height: 70px;
   width: 100%;
 
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--hero-title-color);
@@ -602,7 +605,7 @@ img {
 .portfolio-btn {
   display: inline-block;
   border: none;
-  padding: 10px 32px;
+  padding: 6px 22px;
   min-width: 73px;
   border-radius: 4px;
 
@@ -663,7 +666,8 @@ img {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-link:hover .portfolio-overlay-text {
+.portfolio-link:hover .portfolio-overlay-text,
+.portfolio-link:focus .portfolio-overlay-text {
   transform: translateY(0%);
 }
 
