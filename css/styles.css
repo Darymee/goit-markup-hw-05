@@ -500,7 +500,7 @@ img {
 .address-item .address-link {
   margin-bottom: 9px;
   font-size: 14px;
-  line-height: 1.71px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--hero-title-color);
 
