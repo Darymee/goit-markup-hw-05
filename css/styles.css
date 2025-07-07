@@ -10,8 +10,10 @@
 
 body {
   font-family: var(--primary-font);
-  color: var(--text-color);
   letter-spacing: 0.02em;
+
+  color: var(--secondary-text-color);
+  background-color: #ffffff;
 }
 
 address {
@@ -35,6 +37,15 @@ header {
   background-color: #e7e9fc;
 }
 
+.section-title {
+  font-size: 36px;
+  line-height: 1.11;
+
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+}
+
 .header-logo {
   font-family: var(--logo-font);
   font-weight: 700;
@@ -44,12 +55,11 @@ header {
 
   text-transform: uppercase;
 
-  color: var(--text-color);
+  color: var(--accent-color);
 }
 
-.header-logo span,
-.footer-logo span {
-  color: var(--accent-color);
+.header-logo-accent {
+  color: var(--text-color);
 }
 
 .nav-link {
@@ -78,9 +88,10 @@ header {
   background-color: var(--accent-section-color);
 }
 
-.section-hero h1 {
+.hero-title {
   font-size: 56px;
   line-height: 1.07;
+  letter-spacing: 0.02em;
 
   text-align: center;
 
@@ -112,12 +123,14 @@ header {
   visibility: hidden;
 }
 
-.advantages-item h3 {
+.advantages-title {
   font-size: 20px;
   line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
-.advantages-item p {
+.advantages-text {
   font-size: 16px;
   line-height: 1.5;
 
@@ -130,23 +143,20 @@ header {
   background-color: #f4f4fd;
 }
 
-.section-team h2 {
-  font-size: 36px;
-  line-height: 1.11;
-
-  text-align: center;
-}
-
 .team-item {
   background-color: #ffffff;
 }
 
-.team-item h3 {
+.team-title {
   font-size: 20px;
   line-height: 1.2;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+
+  text-transform: capitalize;
 }
 
-.team-item p {
+.team-text {
   font-size: 16px;
   line-height: 1.5;
 
@@ -154,25 +164,21 @@ header {
 }
 
 /* Section portfolio */
-.section-portfolio h2 {
-  font-size: 36px;
-  line-height: 1.11;
 
-  text-align: center;
-}
-
-.portfolio-item h3 {
+.portfolio-title {
   font-size: 20px;
   line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
-.portfolio-item p {
-  line-height: 1.2;
+.portfolio-text {
+  line-height: 1.5;
   color: var(--secondary-text-color);
 }
 
 /* Footer */
-footer {
+.footer {
   background-color: var(--accent-section-color);
   color: #f4f4fd;
 }
@@ -186,5 +192,13 @@ footer {
 
   text-transform: uppercase;
 
+  color: var(--accent-color);
+}
+
+.footer-logo-accent {
   color: #f4f4fd;
+}
+
+.footer-text {
+  line-height: 1.5;
 }
