@@ -44,6 +44,7 @@ header {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
+  color: var(--text-color);
 }
 
 .header-logo {
@@ -128,13 +129,12 @@ header {
   line-height: 1.2;
   font-weight: 500;
   letter-spacing: 0.02em;
+  color: var(--text-color);
 }
 
 .advantages-text {
   font-size: 16px;
   line-height: 1.5;
-
-  color: var(--secondary-text-color);
 }
 
 /* Section team */
@@ -154,13 +154,13 @@ header {
   font-weight: 500;
 
   text-transform: capitalize;
+
+  color: var(--text-color);
 }
 
 .team-text {
   font-size: 16px;
   line-height: 1.5;
-
-  color: var(--secondary-text-color);
 }
 
 /* Section portfolio */
@@ -170,11 +170,13 @@ header {
   line-height: 1.2;
   font-weight: 500;
   letter-spacing: 0.02em;
+
+  color: var(--text-color);
 }
 
 .portfolio-text {
+  font-size: 16px;
   line-height: 1.5;
-  color: var(--secondary-text-color);
 }
 
 /* Footer */
