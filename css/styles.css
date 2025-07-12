@@ -465,6 +465,10 @@ img {
   max-width: 264px;
 }
 
+.social-list.footer-social {
+  gap: 16px;
+}
+
 .social-text {
   font-size: 16px;
   font-weight: 500;
