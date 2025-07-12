@@ -432,8 +432,11 @@ img {
 
 .footer-content {
   display: flex;
-  gap: 120px;
   align-items: baseline;
+}
+
+.left-content {
+  margin-right: 120px;
 }
 
 .footer-logo {
