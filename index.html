@@ -411,7 +411,7 @@
         <div class="right-content">
           <p class="form-text">Subscribe</p>
           <form class="subscribe-form">
-            <label for="subscribe">
+            <label for="subscribe" class="subscribe-label">
               <input
                 id="subscribe"
                 name="subscribe"
@@ -439,36 +439,44 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <h2 class="modal-title">Leave your contacts and we will call you back</h2>
+        <p class="modal-text">Leave your contacts and we will call you back</p>
         <form class="modal-form">
-          <label class="input-label" for="name"> Name </label>
-          <div class="input-container">
-            <input id="name" type="text" name="name" class="form-input" />
-            <svg class="input-icon" width="18" height="24">
-              <use href="./images/icons.svg#icon-person"></use>
-            </svg>
+          <div class="modal-field">
+            <label class="input-label" for="name"> Name </label>
+            <div class="input-container">
+              <input id="name" type="text" name="name" class="form-input" />
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
           </div>
-
-          <label class="input-label" for="phone">Phone </label>
-          <div class="input-container">
-            <input id="phone" type="tel" name="phone" class="form-input" />
-            <svg class="input-icon" width="18" height="24">
-              <use href="./images/icons.svg#icon-phone"></use>
-            </svg>
+          <div class="modal-field">
+            <label class="input-label" for="phone">Phone </label>
+            <div class="input-container">
+              <input id="phone" type="tel" name="phone" class="form-input" />
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
           </div>
-
-          <label class="input-label" for="email">Email </label>
-          <div class="input-container">
-            <input id="email" type="email" name="email" class="form-input" />
-            <svg class="input-icon" width="18" height="24">
-              <use href="./images/icons.svg#icon-email"></use>
-            </svg>
+          <div class="modal-field">
+            <label class="input-label" for="email">Email </label>
+            <div class="input-container">
+              <input id="email" type="email" name="email" class="form-input" />
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
           </div>
-
-          <label class="input-label last-label">
-            Comment
-            <textarea name="comment" placeholder="Text input" class="form-textarea"></textarea>
-          </label>
+          <div class="modal-field last-field">
+            <label id="user-comment" class="input-label"> Comment </label>
+            <textare
+              id="user-comment"
+              name="comment"
+              placeholder="Text input"
+              class="form-textarea"
+            ></textare>
+          </div>
           <label for="agreement" class="form-agreement">
             <input
               id="agreement"
