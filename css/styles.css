@@ -674,7 +674,7 @@ img {
 
 .input-label {
   font-size: 12px;
-  line-height: 1.67;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--light-grey);
   margin-bottom: 4px;
@@ -735,8 +735,7 @@ img {
 .form-textarea {
   resize: none;
 
-  padding-left: 16px;
-  padding-top: 8px;
+  padding: 8px 16px;
 
   height: 120px;
 }
@@ -745,13 +744,15 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 
+.agreement-field {
+  margin-bottom: 24px;
+}
+
 .form-agreement {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--light-grey);
-
-  margin-bottom: 24px;
 
   cursor: pointer;
 }
@@ -798,11 +799,12 @@ img {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   color: var(--white-color);
   border-radius: 4px;
+  border: none;
 
   display: block;
   margin: 0 auto;
   padding: 0;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
 
   transition: background-color var(--transition);
