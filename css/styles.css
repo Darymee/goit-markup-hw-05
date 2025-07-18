@@ -738,6 +738,7 @@ img {
   padding: 8px 16px;
 
   height: 120px;
+  color: rgba(46, 47, 66, 0.4);
 }
 
 .form-textarea::placeholder {
@@ -776,7 +777,7 @@ img {
 }
 
 .form-checkbox:checked + .form-agreement > .custom-checkbox {
-  background-color: var(--accent-color);
+  background-color: var(--hover-color);
   border: none;
   fill: #f4f4fd;
 }
@@ -789,7 +790,7 @@ img {
 }
 
 .form-button {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
