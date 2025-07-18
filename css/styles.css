@@ -624,7 +624,7 @@ img {
   width: 24px;
   height: 24px;
 
-  padding: 8px;
+  padding: 0;
   margin: 0px 0px 24px auto;
 
   background-color: #e7e9fc;
@@ -680,10 +680,11 @@ img {
   margin-bottom: 4px;
 
   width: 100%;
+  display: block;
 }
 
 .last-field {
-  margin-bottom: 0;
+  margin-bottom: 16px;
 }
 
 .input-container {
@@ -699,6 +700,7 @@ img {
 
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
+  background-color: transparent;
   outline: transparent;
 
   font-size: 12px;
@@ -749,7 +751,7 @@ img {
   letter-spacing: 0.04em;
   color: var(--light-grey);
 
-  margin: 16px 0 24px;
+  margin-bottom: 24px;
 
   cursor: pointer;
 }
@@ -772,7 +774,7 @@ img {
   transition: background-color var(--transition), border var(--transition), fill var(--transition);
 }
 
-.form-checkbox:checked ~ .custom-checkbox {
+.form-checkbox:checked + .form-agreement > .custom-checkbox {
   background-color: var(--accent-color);
   border: none;
   fill: #f4f4fd;
